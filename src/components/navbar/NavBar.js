@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from './NavBar.module.scss';
 
 const NavBar = () => {
@@ -12,12 +11,11 @@ const NavBar = () => {
       >
         About Me
       </button>
+
       <button
         className={styles.button}
         onClick={() =>
-          document
-            .getElementById('projects')
-            .scrollIntoView({ behavior: 'smooth' })
+          document.getElementById('projects').scrollIntoView({ behavior: 'smooth' })
         }
       >
         Projects
@@ -26,19 +24,16 @@ const NavBar = () => {
       <button
         className={styles.button}
         onClick={() =>
-          document
-            .getElementById('resume')
-            .scrollIntoView({ behavior: 'smooth' })
+          document.getElementById('resume').scrollIntoView({ behavior: 'smooth' })
         }
       >
         Resume
       </button>
+
       <button
         className={styles.button}
         onClick={() =>
-          document
-            .getElementById('contact')
-            .scrollIntoView({ behavior: 'smooth' })
+          document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })
         }
       >
         Contact
