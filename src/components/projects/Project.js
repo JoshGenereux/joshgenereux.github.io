@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import styles from './projects.module.scss';
 import SideBorder from '../sideBorder/SideBorder';
 import mars from '../../assets/marspic.png';

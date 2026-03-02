@@ -6,66 +6,75 @@ const Skills = () => {
   return (
     <div className={styles.skills} id="resume">
       <SideBorder down={'contact'} />
-      <div className={styles.subHeader}>Discover</div>
-      <div className={styles.header}>Resume</div>
+      <div className={styles.subHeader}>Experience & Skills</div>
+      <div className={styles.header}>Professional Background</div>
       <div className={styles.headerBorder}></div>
+
       <div className={styles.container}>
         <div className={styles.innerContainer}>
-          <div className={styles.work}>Work:</div>
+          <div className={styles.work}>Professional Experience</div>
           <div className={styles.descript}>
             <span className={styles.dev}>Stratacache</span>
-            &nbsp; Currently I work as a Junior Software Developer at
-            Stratacache. I have worked here since May 2022, and do front end
-            development using Vue and Javascript.
+            &nbsp; Front-End Engineer since May 2022. Contributed to large-scale digital
+            menu board systems used by national food industry clients. Built and
+            maintained Vue and TypeScript applications, resolved production issues,
+            refactored legacy components, and collaborated in Agile sprint cycles to
+            deliver stable production releases.
           </div>
         </div>
+
         <div className={styles.innerContainer}>
-          <div className={styles.education}>Education:</div>
+          <div className={styles.education}>Education</div>
           <div className={styles.descript}>
             <span className={styles.dev}>
-              DevMountain Web Development Bootcamp
+              DevMountain Web Development Program
               <br />
             </span>
-            At DevMountain I learned the basics of web development. Learning
-            Javascript, React, HTML, CSS and SQL, I applied my new found
-            knowlege by building two full stack applications, utilzing all of
-            the above skills.
+            Completed immersive web development training focused on full-stack JavaScript
+            applications, modern front-end frameworks, and relational database design.
+            Built multiple production-style applications utilizing React, Node.js, and
+            SQL.
           </div>
         </div>
+
         <div className={styles.innerContainer}>
-          <div className={styles.skillsName}>Skills:</div>
+          <div className={styles.skillsName}>Technical Skills</div>
+
           <div className={styles.skillsBox}>
             <div className={styles.box}>
-              <div className={styles.frontEnd}>Front End:</div>
+              <div className={styles.frontEnd}>Languages & Frameworks</div>
               <ul className={styles.frontList}>
-                <li className={styles.frontLi}>Javascript</li>
-                <li className={styles.frontLi}>ES6</li>
-                <li className={styles.frontLi}>HTML</li>
-                <li className={styles.frontLi}>CSS</li>
-                <li className={styles.frontLi}>React.js</li>
-                <li className={styles.frontLi}>Vue.js</li>
-                <li className={styles.frontLi}>Javascript</li>
-              </ul>
-            </div>
-            <div className={styles.box}>
-              <div className={styles.frontEnd}>Back End:</div>
-              <ul className={styles.frontList}>
-                <li className={styles.frontLi}>Node.js</li>
+                <li className={styles.frontLi}>JavaScript</li>
+                <li className={styles.frontLi}>TypeScript</li>
                 <li className={styles.frontLi}>Java</li>
-                <li className={styles.frontLi}>Postman</li>
-                <li className={styles.frontLi}>Algorithms</li>
-                <li className={styles.frontLi}>SQL</li>
-                <li className={styles.frontLi}>Axios</li>
+                <li className={styles.frontLi}>Python</li>
+                <li className={styles.frontLi}>React</li>
+                <li className={styles.frontLi}>Vue</li>
+                <li className={styles.frontLi}>Svelte</li>
+                <li className={styles.frontLi}>Node</li>
               </ul>
             </div>
+
             <div className={styles.box}>
-              <div className={styles.frontEnd}>Misc:</div>
+              <div className={styles.frontEnd}>Data & APIs</div>
               <ul className={styles.frontList}>
+                <li className={styles.frontLi}>REST APIs</li>
+                <li className={styles.frontLi}>Axios / Fetch</li>
+                <li className={styles.frontLi}>SQL</li>
+                <li className={styles.frontLi}>PostgreSQL</li>
+                <li className={styles.frontLi}>JSON Logic</li>
+              </ul>
+            </div>
+
+            <div className={styles.box}>
+              <div className={styles.frontEnd}>Tools & Practices</div>
+              <ul className={styles.frontList}>
+                <li className={styles.frontLi}>Git</li>
+                <li className={styles.frontLi}>GitHub / GitLab</li>
                 <li className={styles.frontLi}>Jira</li>
-                <li className={styles.frontLi}>GIT</li>
-                <li className={styles.frontLi}>Github</li>
-                <li className={styles.frontLi}>CSS</li>
-                <li className={styles.frontLi}>Slack</li>
+                <li className={styles.frontLi}>Agile / Scrum</li>
+                <li className={styles.frontLi}>Code Reviews</li>
+                <li className={styles.frontLi}>Component Architecture</li>
               </ul>
             </div>
           </div>
