@@ -1,43 +1,41 @@
-const about = {
+export const about = {
   about:
-    "Hi, I'm Josh. I was raised mostly in Utah where I attended DevMountain Web Development Bootcamp. Afterwards, I became a Software Developer at Stratacache in Dayton, Ohio.",
+    "I'm Josh Genereux, a front-end engineer with experience building and maintaining large-scale digital applications in production environments. After completing formal training in web development, I joined Stratacache in Dayton, Ohio, where I contributed to enterprise digital menu board systems used by national food industry clients. My work focuses on building maintainable, type-safe applications with modern JavaScript frameworks.",
   header: 'Josh Genereux',
   subheader: 'About Me',
   top: 'Syracuse',
   bottom: 'Utah',
   top2: 'Dayton',
   bottom2: 'Ohio',
-  top3: 'Junior',
-  bottom3: 'Developer',
+  top3: 'Front-End',
+  bottom3: 'Engineer',
   description: 'Learn More',
 };
 
-const hobbies = {
+export const hobbies = {
   about:
-    'I love coding, computers, and video games. I enjoy hiking and being in nature. I also like working on my car, riding motorcycles, and tending to my house plants.',
-  header: 'Hobbies',
-  subheader: 'What I Do',
-  top: 'Video Games',
-  bottom: 'Coding',
-  top2: 'Cars',
-  bottom2: 'Audi',
-  top3: 'Nature',
+    'Outside of software development, I enjoy exploring technology, gaming, and hands on mechanical projects. I spend time hiking and being outdoors, and I enjoy working on cars and motorcycles. I also like growing house plants and home improvement projects. I value problem solving both professionally and personally.',
+  header: 'Interests',
+  subheader: 'Outside of Work',
+  top: 'Gaming',
+  bottom: 'Technology',
+  top2: 'Automotive',
+  bottom2: 'Motorcycles',
+  top3: 'Outdoors',
   bottom3: 'Hiking',
   description: 'Learn More',
 };
 
-const past = {
+export const past = {
   about:
-    'After graduating high school, I worked construction for many years. My brother introduced me to Java, leading me down the path to become a Software Developer.',
-  header: 'Past Life',
-  subheader: 'What I Did',
+    'Before transitioning into software engineering, I worked in construction and road infrastructure. That experience strengthened my work ethic, attention to detail, and ability to collaborate on large, coordinated projects. My interest in programming began with Java and evolved into a full-time career in modern web development.',
+  header: 'Background',
+  subheader: 'Professional Journey',
   top: 'Construction',
-  bottom: 'Road Work',
+  bottom: 'Infrastructure',
   top2: 'Java',
-  bottom2: 'DevMountain',
-  top3: 'Programming',
+  bottom2: 'Foundations',
+  top3: 'Engineering',
   bottom3: 'Career',
   description: 'Learn More',
 };
-
-export { about, hobbies, past };

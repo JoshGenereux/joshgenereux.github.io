@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from './contact.module.scss';
 
 const Contact = () => {
@@ -9,9 +8,7 @@ const Contact = () => {
         <button
           className={styles.homeButton}
           onClick={() =>
-            document
-              .getElementById('navBar')
-              .scrollIntoView({ behavior: 'smooth' })
+            document.getElementById('navBar').scrollIntoView({ behavior: 'smooth' })
           }
         >
           <span className={styles.homeText}>H</span>
