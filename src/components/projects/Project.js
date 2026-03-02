@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import styles from './projects.module.scss';
 import SideBorder from '../sideBorder/SideBorder';
 import mars from '../../assets/marspic.png';
-import { jpass, fitness, calories, weather, portfolio } from './texts';
+import { jpass, fitness, weather, portfolio } from './texts';
 import crosshair from '../../assets/focus.png';
 
 const Project = () => {
@@ -28,21 +28,25 @@ const Project = () => {
         setShowProject({ jpassState: true });
         text = jpass;
         break;
+
       case 'fitness':
         setShowProject({ ...showProject });
         setShowProject({ fitnessState: true });
         text = fitness;
         break;
+
       case 'weather':
         setShowProject({ ...showProject });
         setShowProject({ weatherState: true });
         text = weather;
         break;
+
       case 'portfolio':
         setShowProject({ ...showProject });
         setShowProject({ portfolioState: true });
         text = portfolio;
         break;
+
       default:
         setShowProject({ ...showProject });
         setShowProject({ jpassState: true });
