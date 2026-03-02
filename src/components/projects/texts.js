@@ -1,7 +1,7 @@
 const jpass = {
   header: 'JPass',
   description:
-    'JPass is a full-stack password management application built with React and JavaScript. It allows users to securely store and manage credentials with persistent storage backed by a SQL database hosted on Heroku. The application includes client-side state management, form validation, and CRUD operations for credential management.',
+    'JPass is a full stack password management application built with React and JavaScript. It allows users to securely store and manage credentials with persistent storage backed by a SQL database hosted on Heroku. The application includes client-side state management, form validation, and CRUD operations for credential management.',
   top1: '25%',
   bottom1: 'JavaScript',
   top2: '55%',
