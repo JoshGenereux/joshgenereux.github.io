@@ -48,7 +48,7 @@ const Landing = () => {
         <div className={styles.linkContainer}>
           <a
             className={styles.link}
-            href="https://docs.google.com/document/d/1PjXril9NWsKXJ5Crr-fJNhXNuUJ7ncNDkWOFmR2ejYs/edit?usp=sharing"
+            href="https://docs.google.com/document/d/19zsoWqhQ_R5pins1R1dy6ohkc8d6Nek1yi7FDe-c1eY/edit?usp=sharing"
           >
             &nbsp;Resume
           </a>
