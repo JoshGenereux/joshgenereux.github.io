@@ -1,20 +1,17 @@
-import React, { useEffect, useState } from 'react';
+import { useState } from 'react';
 import styles from './projects.module.scss';
 import SideBorder from '../sideBorder/SideBorder';
 import { jpass, fitness, calories, weather, portfolio } from './texts';
 
 const Projects = () => {
-  const nameArr = ['JPass', 'Live Fitness', 'Portfolio', 'Weather', 'Calories'];
-
   const [showProject, setShowProject] = useState({
     jpassState: false,
     fitnessState: false,
-    caloriesState: false,
     weatherState: false,
     portfolioState: false,
   });
 
-  const switchTo = (e) => {
+  const switchTo = e => {
     e.preventDefault();
 
     const element = e.target.id;
@@ -26,26 +23,25 @@ const Projects = () => {
         setShowProject({ jpassState: true });
         text = jpass;
         break;
+
       case 'fitness':
         setShowProject({ ...showProject });
         setShowProject({ fitnessState: true });
         text = fitness;
         break;
-      case 'calories':
-        setShowProject({ ...showProject });
-        setShowProject({ caloriesState: true });
-        text = calories;
-        break;
+
       case 'weather':
         setShowProject({ ...showProject });
         setShowProject({ weatherState: true });
         text = weather;
         break;
+
       case 'portfolio':
         setShowProject({ ...showProject });
         setShowProject({ portfolioState: true });
         text = portfolio;
         break;
+
       default:
         setShowProject({ ...showProject });
         setShowProject({ jpassState: true });

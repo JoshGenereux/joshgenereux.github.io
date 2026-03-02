@@ -6,18 +6,17 @@ import { jpass, fitness, calories, weather, portfolio } from './texts';
 import crosshair from '../../assets/focus.png';
 
 const Project = () => {
-  const nameArr = ['JPass', 'Live Fitness', 'Portfolio', 'Weather', 'Calories'];
-  const idArr = ['jpass', 'fitness', 'portfolio', 'weather', 'calories'];
+  const nameArr = ['JPass', 'Live Fitness', 'Portfolio', 'Weather'];
+  const idArr = ['jpass', 'fitness', 'portfolio', 'weather'];
 
   const [showProject, setShowProject] = useState({
     jpassState: false,
     fitnessState: false,
-    caloriesState: false,
     weatherState: false,
     portfolioState: false,
   });
 
-  const switchTo = (e) => {
+  const switchTo = e => {
     e.preventDefault();
 
     const element = e.target.id;
@@ -33,11 +32,6 @@ const Project = () => {
         setShowProject({ ...showProject });
         setShowProject({ fitnessState: true });
         text = fitness;
-        break;
-      case 'calories':
-        setShowProject({ ...showProject });
-        setShowProject({ caloriesState: true });
-        text = calories;
         break;
       case 'weather':
         setShowProject({ ...showProject });
