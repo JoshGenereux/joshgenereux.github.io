@@ -48,8 +48,9 @@ const Skills = () => {
                 <li className={styles.frontLi}>TypeScript</li>
                 <li className={styles.frontLi}>Java</li>
                 <li className={styles.frontLi}>Python</li>
-                <li className={styles.frontLi}>React</li>
-                <li className={styles.frontLi}>Vue</li>
+                <li className={styles.frontLi}>React.js</li>
+                <li className={styles.frontLi}>Next.js</li>
+                <li className={styles.frontLi}>Vue.js</li>
                 <li className={styles.frontLi}>Svelte</li>
                 <li className={styles.frontLi}>Node</li>
               </ul>
