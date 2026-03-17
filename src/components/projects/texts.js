@@ -50,4 +50,17 @@ const portfolio = {
   link: 'https://github.com/JoshGenereux/joshgenereux.github.io',
 };
 
-export { jpass, fitness, portfolio, weather };
+const whoop = {
+  header: 'Whoop Metrics',
+  description:
+    'A React and Next.js-based performance analytics dashboard inspired by WHOOP. The application processes user-uploaded CSV data to visualize recovery, strain, and sleep metrics through dynamic UI components including animated progress rings and data-driven charts. The project emphasizes client-side data parsing, state management, and custom visualization logic for real-time feedback.',
+  top1: '40%',
+  bottom1: 'TypeScript',
+  top2: '40%',
+  bottom2: 'React / Next.js',
+  top3: '20%',
+  bottom3: 'CSS',
+  link: 'https://github.com/JoshGenereux/YOUR-REPO-NAME',
+};
+
+export { jpass, fitness, portfolio, weather, whoop };

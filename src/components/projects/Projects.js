@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import styles from './projects.module.scss';
 import SideBorder from '../sideBorder/SideBorder';
-import { jpass, fitness, calories, weather, portfolio } from './texts';
+import { jpass, fitness, whoop, weather, portfolio } from './texts';
 
 const Projects = () => {
   const [showProject, setShowProject] = useState({
@@ -28,6 +28,12 @@ const Projects = () => {
         setShowProject({ ...showProject });
         setShowProject({ fitnessState: true });
         text = fitness;
+        break;
+
+      case 'whoop':
+        setShowProject({ ...showProject });
+        setShowProject({ fitnessState: true });
+        text = whoop;
         break;
 
       case 'weather':
@@ -136,6 +142,19 @@ const Projects = () => {
 
         <div
           className={`${styles.project} ${styles.weather}`}
+          id="whoop"
+          onClick={switchTo}
+        >
+          <div className={styles.projectHeader} id="whoop">
+            Whoop
+          </div>
+          <div className={styles.projectDescript} id="whoop">
+            A React Weather API.
+          </div>
+        </div>
+
+        <div
+          className={`${styles.project} ${styles.weather}`}
           id="weather"
           onClick={switchTo}
         >
@@ -173,6 +192,7 @@ const Projects = () => {
           </div>
         </div>
       </div>
+
       <div className={styles.more}>More to come</div>
     </div>
   );

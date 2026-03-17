@@ -2,18 +2,19 @@ import { useState } from 'react';
 import styles from './projects.module.scss';
 import SideBorder from '../sideBorder/SideBorder';
 import mars from '../../assets/marspic.png';
-import { jpass, fitness, weather, portfolio } from './texts';
+import { jpass, fitness, weather, portfolio, whoop } from './texts';
 import crosshair from '../../assets/focus.png';
 
 const Project = () => {
-  const nameArr = ['JPass', 'Live Fitness', 'Portfolio', 'Weather'];
-  const idArr = ['jpass', 'fitness', 'portfolio', 'weather'];
+  const nameArr = ['JPass', 'Whoop Metrics', 'Live Fitness', 'Portfolio', 'Weather'];
+  const idArr = ['jpass', 'whoop', 'fitness', 'portfolio', 'weather'];
 
   const [showProject, setShowProject] = useState({
     jpassState: false,
     fitnessState: false,
     weatherState: false,
     portfolioState: false,
+    whoopState: false,
   });
 
   const switchTo = e => {
@@ -27,6 +28,12 @@ const Project = () => {
         setShowProject({ ...showProject });
         setShowProject({ jpassState: true });
         text = jpass;
+        break;
+
+      case 'whoop':
+        setShowProject({ ...showProject });
+        setShowProject({ whoopState: true });
+        text = whoop;
         break;
 
       case 'fitness':
@@ -159,7 +166,7 @@ const Project = () => {
           className={`${styles.crosshair} ${styles.crosshairFour}`}
           alt=""
           onClick={switchTo}
-          id="calories"
+          id="whoop"
         />
         <img
           src={crosshair}
